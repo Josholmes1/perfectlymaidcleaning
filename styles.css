@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #c2b280;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/cleaning1.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.cta {
+    display: inline-block;
+    background: #c2b280;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Services & Logos */
+.services, .logos, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logo-gallery img {
+    width: 150px;
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background: #c2b280;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.site-logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.info-box {
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.services-list i {
+    color: #c2b280;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c2b280;
+}
+
