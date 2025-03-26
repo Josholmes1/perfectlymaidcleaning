@@ -5,8 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Perfectly Maid Cleaning</title>
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      background: url('images/cleaning1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .logo {
+      width: 130px;
+      margin: 0 auto;
+      display: block;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .top-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+    }
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .services-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    .client-logos, .about-preview, .testimonials {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 5%;
+      text-align: center;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    .logo-grid img {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+    .logo-grid img:nth-child(1) { animation-delay: 0.2s; }
+    .logo-grid img:nth-child(2) { animation-delay: 0.4s; }
+    .logo-grid img:nth-child(3) { animation-delay: 0.6s; }
+    .logo-grid img:nth-child(4) { animation-delay: 0.8s; }
+    .logo-grid img:nth-child(5) { animation-delay: 1s; }
+    .logo-grid img:nth-child(6) { animation-delay: 1.2s; }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .footer {
+      background: #c2b280;
+      text-align: center;
+      padding: 20px;
+      color: black;
+    }
+    h1::before {
+      content: " ";
+    }
+    h2::before {
+      content: " ";
+    }
+    nav ul li a::before {
+      content: " ";
+    }
+    .cta-button {
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background-color: #c2b280;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: black;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #a89b6f;
+      transform: scale(1.05);
+    }
+    .page-content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 5%;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .hero-banner {
+      background: url('images/hero-cleaning.jpg') center center/cover no-repeat;
+      height: 400px;
+      position: relative;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 100px 20px;
+    }
+    .hero-overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      border-left: 5px solid #c2b280;
+      margin: 20px auto;
+      max-width: 600px;
+      padding-left: 15px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="top-bar">
       <div class="social-icons">
@@ -26,18 +155,66 @@
       </ul>
     </nav>
   </header>
-  <main class="hero-section">
-    <div class="hero-left">
-      <h1>We'll do the cleaning!</h1>
-      <p>Professional services for industrial, commercial, and residential spaces.</p>
-      <a href="contact.html" class="cta-button">Make an Enquiry</a>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-overlay">
+      <h1>Professional Cleaning Solutions</h1>
+      <p>For homes, businesses, and everything in between.</p>
+      <a href="contact.html" class="cta-button">Get a Free Quote</a>
     </div>
-    <div class="hero-right">
-      <img src="images/cleaning-illustration.png" alt="Cleaning Tools"/>
-    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <h2>Why Choose Perfectly Maid?</h2>
+    <p>Perfectly Maid Cleaning is committed to delivering high-quality, reliable cleaning services for homes, businesses, and commercial premises across the UK. Our trusted team is fully insured, DBS-checked, and trained to deliver spotless results every time.</p>
+    <ul class="services-list">
+      <li>End of Tenancy Cleans</li>
+      <li>Commercial & Office Cleaning</li>
+      <li>After-Build Cleaning</li>
+      <li>Ongoing Cleaning Contracts</li>
+    </ul>
+    <a href="services.html" class="cta-button">View All Services</a>
+  </section>
+
+  <!-- Mission Statement -->
+  <blockquote style="font-style: italic; text-align: center; margin: 20px auto; background-color: rgba(255,255,255,0.9); padding: 20px; border-radius: 10px; max-width: 800px;">
+    “Clean spaces. Happy places.” – Our mission is to make your home or workplace shine.
+  </blockquote>
+
+  <!-- Contact Form -->
+  <main class="page-content">
+    <h1>📩 Contact Us</h1>
+    <p>Email us directly at: <a href="mailto:Akcleaningservices22@outlook.com">Akcleaningservices22@outlook.com</a></p>
+    <h2>💬 Send us a message</h2>
+    <form action="mailto:Akcleaningservices22@outlook.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+      <button type="submit">Send Email</button>
+    </form>
   </main>
+
+  <!-- Companies We Work With -->
+  <section class="client-logos">
+    <h2>Companies We Work With</h2>
+    <div class="logo-grid">
+      <img src="images/logo1.png" alt="PJM Construction">
+      <img src="images/logo2.png" alt="TR Interiors">
+      <img src="images/logo3.png" alt="Burnley Youth Theatre">
+      <img src="images/logo4.png" alt="CK Services">
+      <img src="images/logo5.png" alt="Millers UK">
+      <img src="images/logo6.png" alt="BAE Systems">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Perfectly Maid Cleaning. All rights reserved.</p>
+    <p>&copy; 2025 Perfectly Maid Cleaning. All rights reserved. </p>
   </footer>
 </body>
 </html>
