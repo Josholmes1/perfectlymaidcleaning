@@ -73,13 +73,13 @@
       color: black;
     }
     h1::before {
-      content: " ";
+      content: "🧽 ";
     }
     h2::before {
-      content: " ";
+      content: "🏢 ";
     }
     nav ul li a::before {
-      content: " ";
+      content: "📌 ";
     }
     .cta-button {
       font-size: 1rem;
@@ -125,38 +125,27 @@
       font-size: 1.2rem;
       margin-bottom: 20px;
     }
-    .testimonials blockquote {
-      font-style: italic;
-      border-left: 5px solid #c2b280;
-      margin: 20px auto;
-      max-width: 600px;
-      padding-left: 15px;
-    }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="top-bar">
-      <div class="social-icons">
-        <a href="#"><img src="images/facebook.png" alt="Facebook"/></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram"/></a>
-        <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
-      </div>
-      <img src="images/logo.png" alt="Logo" class="logo"/>
+  <div class="top-bar">
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"/></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"/></a>
+      <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
     </div>
-    <nav>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <img src="images/logo.png" alt="Logo" class="logo"/>
+  </div>
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero Banner -->
   <section class="hero-banner">
     <div class="hero-overlay">
       <h1>Professional Cleaning Solutions</h1>
@@ -164,57 +153,5 @@
       <a href="contact.html" class="cta-button">Get a Free Quote</a>
     </div>
   </section>
-
-  <!-- About Preview -->
-  <section class="about-preview">
-    <h2>Why Choose Perfectly Maid?</h2>
-    <p>Perfectly Maid Cleaning is committed to delivering high-quality, reliable cleaning services for homes, businesses, and commercial premises across the UK. Our trusted team is fully insured, DBS-checked, and trained to deliver spotless results every time.</p>
-    <ul class="services-list">
-      <li>End of Tenancy Cleans</li>
-      <li>Commercial & Office Cleaning</li>
-      <li>After-Build Cleaning</li>
-      <li>Ongoing Cleaning Contracts</li>
-    </ul>
-    <a href="services.html" class="cta-button">View All Services</a>
-  </section>
-
-  <!-- Mission Statement -->
-  <blockquote style="font-style: italic; text-align: center; margin: 20px auto; background-color: rgba(255,255,255,0.9); padding: 20px; border-radius: 10px; max-width: 800px;">
-    “Clean spaces. Happy places.” – Our mission is to make your home or workplace shine.
-  </blockquote>
-
-  <!-- Contact Form -->
-  <main class="page-content">
-    <h1>📩 Contact Us</h1>
-    <p>Email us directly at: <a href="mailto:Akcleaningservices22@outlook.com">Akcleaningservices22@outlook.com</a></p>
-    <h2>💬 Send us a message</h2>
-    <form action="mailto:Akcleaningservices22@outlook.com" method="POST" enctype="text/plain">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="6" required></textarea><br><br>
-      <button type="submit">Send Email</button>
-    </form>
-  </main>
-
-  <!-- Companies We Work With -->
-  <section class="client-logos">
-    <h2>Companies We Work With</h2>
-    <div class="logo-grid">
-      <img src="images/logo1.png" alt="PJM Construction">
-      <img src="images/logo2.png" alt="TR Interiors">
-      <img src="images/logo3.png" alt="Burnley Youth Theatre">
-      <img src="images/logo4.png" alt="CK Services">
-      <img src="images/logo5.png" alt="Millers UK">
-      <img src="images/logo6.png" alt="BAE Systems">
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Perfectly Maid Cleaning. All rights reserved. </p>
-  </footer>
 </body>
 </html>
