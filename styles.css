@@ -172,3 +172,14 @@ nav ul li a::before {
     gap: 10px;
   }
 }
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
