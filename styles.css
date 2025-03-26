@@ -193,3 +193,40 @@ nav ul li a::before {
   height: 32px;
   object-fit: contain;
 }
+
+/* Restore horizontal nav layout */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4d3b1f;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Make sure all content sections are visible */
+section, main {
+  display: block;
+}
+
+/* Responsive nav cleanup */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
