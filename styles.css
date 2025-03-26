@@ -30,25 +30,6 @@ body {
   display: flex;
   gap: 10px;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav ul li a:hover,
-nav ul li a.active {
-  text-decoration: underline;
-}
 .services-list {
   list-style-type: disc;
   padding-left: 20px;
@@ -140,20 +121,12 @@ nav ul li a::before {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-.testimonials blockquote {
-  font-style: italic;
-  border-left: 5px solid #c2b280;
-  margin: 20px auto;
-  max-width: 600px;
-  padding-left: 15px;
-}
 
-/* ✅ Responsive Fixes that won't break layout */
+/* Responsive Fixes */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 10px;
   }
   .hero-overlay {
     padding: 60px 15px;
@@ -165,19 +138,56 @@ nav ul li a::before {
     font-size: 1rem;
   }
   .logo-grid img {
-    width: 90px;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+    width: 100px;
   }
 }
 
+/* ==== Mobile & Responsive Fixes ==== */
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero-overlay {
+    padding: 60px 15px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .logo-grid img {
+    width: 90px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+}
+
+/* Social icon styling for all screen sizes */
 .social-icons {
   display: flex;
   gap: 12px;
   align-items: center;
 }
+
 .social-icons img {
   width: 32px;
   height: 32px;
