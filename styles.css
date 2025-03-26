@@ -30,6 +30,25 @@ body {
   display: flex;
   gap: 10px;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
 .services-list {
   list-style-type: disc;
   padding-left: 20px;
@@ -121,12 +140,20 @@ nav ul li a::before {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+.testimonials blockquote {
+  font-style: italic;
+  border-left: 5px solid #c2b280;
+  margin: 20px auto;
+  max-width: 600px;
+  padding-left: 15px;
+}
 
-/* Responsive Fixes */
+/* ✅ Responsive Fixes that won't break layout */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
   }
   .hero-overlay {
     padding: 60px 15px;
@@ -138,6 +165,10 @@ nav ul li a::before {
     font-size: 1rem;
   }
   .logo-grid img {
-    width: 100px;
+    width: 90px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
